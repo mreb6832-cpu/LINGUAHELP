@@ -1,0 +1,74 @@
+login.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | LinguaHelp</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial}
+body{
+background:#10172a;color:white;min-height:100vh;
+display:flex;align-items:center;justify-content:center;
+padding:20px
+}
+.container{
+width:100%;max-width:420px;background:#202d46;
+padding:35px;border-radius:18px;
+border:1px solid #34445f
+}
+.logo{text-align:center;color:#65e6c4;font-size:27px;
+font-weight:bold;margin-bottom:25px}
+h2{text-align:center;margin-bottom:10px}
+p{text-align:center;color:#b8c2d6;margin-bottom:25px}
+label{display:block;margin:15px 0 8px}
+input{
+width:100%;padding:14px;border-radius:8px;
+border:1px solid #40516e;background:#10172a;
+color:white;outline:none
+}
+button{
+width:100%;padding:14px;margin-top:22px;
+background:#65e6c4;border:0;border-radius:8px;
+font-weight:bold;font-size:16px;cursor:pointer
+}
+a{color:#65e6c4;text-decoration:none}
+.links{text-align:center;margin-top:22px;line-height:2}
+#message{text-align:center;margin-top:15px;color:#65e6c4}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="logo">🌍 LinguaHelp</div>
+
+<h2>Welcome Back</h2>
+<p>Login to your LinguaHelp account</p>
+
+<form id="loginForm">
+
+<label>Email Address</label>
+<input type="email" id="email" required
+placeholder="Enter your email">
+
+<label>Password</label>
+<input type="password" id="password" required
+placeholder="Enter your password">
+
+<button type="submit">Login</button>
+
+</form>
+
+<div id="message"></div>
+
+<div class="links">
+<a href="register.html">Create an account</a><br>
+<a href="index.html">Back to Home</a>
+</div>
+
+</div>
+</body>
+</html>
