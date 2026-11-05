@@ -1,0 +1,262 @@
+LINGUAHELP — index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10172a">
+
+  <title>LinguaHelp | Understand Each Other</title>
+
+  <meta name="description"
+    content="LinguaHelp helps people communicate, translate and learn languages around the world.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #10172a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #26324b;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #65e6c4;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      background: #65e6c4;
+      color: #10172a;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 110px 20px 85px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      line-height: 1.15;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #65e6c4;
+    }
+
+    .hero p {
+      color: #b8c2d6;
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    .features {
+      padding: 60px 8%;
+      background: #151f35;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #202d46;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #34445f;
+    }
+
+    .card .icon {
+      font-size: 35px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #65e6c4;
+    }
+
+    .card p {
+      color: #b8c2d6;
+      line-height: 1.6;
+    }
+
+    .free {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .free h2 {
+      font-size: 34px;
+      margin-bottom: 18px;
+    }
+
+    .free p {
+      color: #b8c2d6;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #26324b;
+      color: #aab5c9;
+    }
+
+    @media(max-width: 650px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a:not(.btn) {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 75px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌍 LinguaHelp</div>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="login.html" class="btn">Login</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>
+      Understand Each Other.
+      <span>Connect the World.</span>
+    </h1>
+
+    <p>
+      Break language barriers with LinguaHelp.
+      Translate, learn new languages and communicate
+      with people around the world.
+    </p>
+
+    <a href="register.html" class="btn">
+      Get Started — Free
+    </a>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Explore LinguaHelp</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>AI Translator</h3>
+        <p>Translate text between different languages.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎤</div>
+        <h3>Voice Translation</h3>
+        <p>Communicate using voice and speech translation.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📚</div>
+        <h3>Learn Languages</h3>
+        <p>Practice languages through lessons and exercises.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📖</div>
+        <h3>Smart Dictionary</h3>
+        <p>Discover meanings and explanations of words.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💬</div>
+        <h3>Community</h3>
+        <p>Connect with people learning different languages.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⭐</div>
+        <h3>Premium</h3>
+        <p>Advanced learning features will come later.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="free" id="about">
+    <h2>Language should connect everyone.</h2>
+    <p>
+      Start learning and communicating today.
+      LinguaHelp starts free for everyone.
+    </p>
+    <a href="register.html" class="btn">Join LinguaHelp</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 LinguaHelp. All rights reserved.</p>
+  <p>Understand Each Other. Connect the World.</p>
+</footer>
+
+</body>
+  </html>
